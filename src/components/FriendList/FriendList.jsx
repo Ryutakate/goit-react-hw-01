@@ -1,8 +1,8 @@
 import PropTypes from "prop-types";
-import FriendListItem from "../FriendListItem/riendListItem"; // Виправлений імпорт!
+import FriendListItem from "../FriendListItem/riendListItem"; 
 import styles from "./FriendList.module.css";
 
-const FriendList = ({ friends = [] }) => { // Додаємо значення за замовчуванням []
+const FriendList = ({ friends = [] }) => { 
     return (
         <ul className={styles.friendList}>
             {friends.map(({ id, avatar, name, isOnline }) => (
